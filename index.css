@@ -1,0 +1,11 @@
+#main {
+    text-align: center;
+    background-color: aqua;
+}
+
+#input-box {
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+}
