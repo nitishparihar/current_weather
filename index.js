@@ -1,16 +1,16 @@
 const getValueInput = () =>{
 	let city = document.getElementById("input-box").value; 
-	console.log(city)
-  
 
-
+	setTimeout(function(){
+		document.getElementById("input-box").value = ""
+	}, 2000)
 
 fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?q=${city}&units=metric`)
     .then(res => res.json())
     .then(data => {
         let temperature = (data.main.temp).toFixed(0)
         document.getElementById("temp").innerHTML = `
-            <h3>The current temperature of ${data.name} is ${temperature}°C</h3>
+            <h2 class="temperature">The current temperature of ${data.name} is ${temperature}°C</h2>
             `
 			
     })

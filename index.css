@@ -1,11 +1,32 @@
-#main {
+body {
+    font-size: 20px;
     text-align: center;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 #input-box {
-    border: none;
+    border: 2px solid aqua;
     border-radius: 30px;
     padding: 10px;
     text-align: center;
+}
+
+.btn {
+    margin-top: 1em;
+    border: 2px solid lightgreen;
+    border-radius: 30px;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.temperature {
+    color: orange;
 }
